@@ -24,8 +24,9 @@
     <button class="btn" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View My Work</button>
   </header>
   <main>
-    <section id="about">
-      <h2>About and Contact</h2>
+    <details id="about" class="collapsible">
+      <summary><h2>About and Contact</h2></summary>
+      <div class="section-content">
       <div class="about-text">
         <p>
           Hello! I am a Full-Stack Developer with strengths in Front-End Development. I'm someone who loves creating clean, interactive experiences for the web and desktop. I’m currently pursuing my Bachelor’s degree in Computer Science and building my skills in both front-end web development and desktop application development.
@@ -86,10 +87,12 @@
           </ul>
         </div>
       </div>
-    </section>
+      </div>
+    </details>
 
-    <section id="certifications">
-      <h2>Certifications</h2>
+    <details id="certifications" class="collapsible">
+      <summary><h2>Certifications</h2></summary>
+      <div class="section-content">
       <div class="cert-list">
         <div class="cert-card">
           <span class="cert-badge">💻</span>
@@ -150,10 +153,12 @@ web pages, a new certificate to complement my experience.</div>
           <div>Food handling certification from when I was the Opening Supervisor/Manager on Duty at Chick-Fil-A</div>
         </div>
       </div>
-    </section>
+      </div>
+    </details>
 
-    <section id="projects">
-      <h2>Projects</h2>
+    <details id="projects" class="collapsible">
+      <summary><h2>Projects</h2></summary>
+      <div class="section-content">
       <div class="projects-grid">
         <div class="project-card">
           <div class="project-title">nami-lang</div>
@@ -234,7 +239,8 @@ on save, and you're done! The program saves your portrait into your very own ico
           </div>
         </div>
       </div> <!-- Project Grid -->
-    </section> <!-- Projects -->
+      </div>
+    </details> <!-- Projects -->
   </main>
 </body>
 </html>
