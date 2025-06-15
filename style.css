@@ -42,6 +42,12 @@ nav a {
   letter-spacing: 0.05em;
   position: relative;
 }
+.project-card a {
+  transition: color var(--transition);
+}
+.project-card a:hover {
+  color: white;
+}
 nav a.active, nav a:hover {
   color: var(--accent);
 }
