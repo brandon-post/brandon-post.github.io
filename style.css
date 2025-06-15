@@ -365,7 +365,7 @@ footer {
     padding: 1rem;
   }
   details.collapsible summary {
-    padding: 1.2rem 0.7rem;
+    padding: 1.2rem 2rem;
   }
   .projects-grid {
     grid-template-columns: 1fr;
