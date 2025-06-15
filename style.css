@@ -133,8 +133,8 @@
       margin-bottom: 1.5rem;
     }
     .contact-links a {
-      margin-right: 2rem;
-      margin-left: 2em;
+      margin-right: 1px;
+      margin-left: 1px;
       border: 1px solid var(--border);
       padding: 10px;
       border-radius: 1rem;
