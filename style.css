@@ -195,8 +195,8 @@ h2 {
 }
 /* Certifications */
 .cert-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   align-items: flex-start;
 }
@@ -204,14 +204,20 @@ h2 {
   background: #23244a;
   border: 1px solid var(--border);
   border-radius: 1rem;
-  padding: 1.2rem 1rem;
-  min-width: 180px;
-  flex: 1 1 180px;
-  max-width: 220px;
-  text-align: center;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.8rem;
+  align-items: start;
+  width: 100%;
+  word-break: break-word;
 }
 .cert-info {
-  margin-bottom: 0.5rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-template-rows: repeat(2, auto);
+  gap: 0.3rem 0.5rem;
+  align-items: center;
 }
 .cert-desc {
   color: var(--muted);
@@ -352,48 +358,7 @@ footer {
     grid-template-columns: 1fr;
   }
   .cert-list {
-    flex-direction: column;
-    align-items: center;
-  }
-  .cert-card {
-    max-width: none;
-    width: 100%;
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 1rem;
-    text-align: left;
-    align-items: center;
-    flex: 1 1 auto;
-    min-width: 0;
-  }
-  .cert-info {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: auto auto;
-    gap: 0.3rem 0.5rem;
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    align-items: center;
-  }
-  .cert-info .cert-badge {
-    grid-row: 1 / span 2;
-    margin-bottom: 0;
-  }
-  .cert-info .cert-title {
-    grid-row: 1;
-  }
-  .cert-info .cert-view {
-    grid-row: 1;
-  }
-  .cert-info .cert-org {
-    grid-row: 2;
-  }
-  .cert-info .cert-date {
-    grid-row: 2;
-  }
-  .cert-desc {
-    grid-column: 2;
-    grid-row: 1 / span 2;
+    grid-template-columns: 1fr;
   }
   nav {
     gap: 1rem;
