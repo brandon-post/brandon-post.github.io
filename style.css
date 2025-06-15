@@ -290,6 +290,10 @@ h2 {
   color: var(--accent);
   margin-bottom: 0.6rem;
 }
+.project-title a {
+    text-decoration: none;
+    color: var(--accent);
+}
 .project-sum {
   color: var(--muted);
 }
