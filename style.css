@@ -17,6 +17,11 @@ body {
   color: var(--text);
   line-height: 1.6;
 }
+a.navlink.wrapped {
+    padding-top: 0;
+    margin-top: 0;
+    top: -0.5rem;
+}
 nav {
   background: var(--card);
   border-bottom: 1px solid var(--border);
@@ -108,7 +113,7 @@ details.collapsible summary::-webkit-details-marker {
   display: none;
 }
 details.collapsible summary::after {
-  content: '\25B6';
+  content: '>';
   transition: transform var(--transition);
   color: var(--accent);
 }
@@ -231,7 +236,8 @@ h2 {
   font-weight: 700;
   color: var(--accent);
   font-size: 1.1rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0;
+  margin-left: 2px;
 }
 .cert-title a {
   text-decoration: none;
@@ -244,14 +250,14 @@ h2 {
   font-weight: 700;
 }
 .cert-org {
-  font-size: 0.96rem;
+  font-size: 0.87rem;
   color: var(--muted);
   margin-bottom: 0.1rem;
 }
 .cert-date {
   font-size: 0.87rem;
   color: var(--muted);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.1rem;
 }
 
 /* Projects */
