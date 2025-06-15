@@ -7,14 +7,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="#home" class="active">Home</a>
-    <a href="#about">About</a>
-    <a href="#about">Contact</a>
-    <a href="#skill">Skills</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#projects">Projects</a>
-    <!--<a href="#skills">Skills</a>-->
+  <nav class="navwrapper">
+    <a href="#home" class="active navlink">Home</a>
+    <a href="#about" class="navlink">About</a>
+    <a href="#about" class="navlink">Contact</a>
+    <a href="#skill" class="navlink">Skills</a>
+    <a href="#certifications" class="navlink">Certifications</a>
+    <a href="#projects" class="navlink">Projects</a>
   </nav>
   <header id="home">
     <div style="width: 100px;aspect-ratio: 1;clip-path: polygon(100% 50%,85.36% 85.36%,50% 100%,14.64% 85.36%,0% 50%,14.64% 14.64%,50% 0%,85.36% 14.64%);background-color:var(--accent);margin:auto;"></div>
@@ -44,8 +43,8 @@
       </div>
       
       <h2 id="skill">Strengths and Skills</h2>
-      <h3 id="skill-desc">Below are my strengths, but I am adaptable to learn fast in any
-environment with new Languages, Tools, and Libraries.</h3>
+      <h4 id="skill-desc">Below are my strengths, but I am adaptable to learn fast in any
+environment with new Languages, Tools, and Libraries.</h4>
       <div class="skills-list">
         <div class="skill-category">
           <h3>Web</h3>
@@ -106,19 +105,18 @@ environment with new Languages, Tools, and Libraries.</h3>
     <details id="certifications" class="collapsible">
       <summary>Certifications</summary>
       <div class="section-content">
-      <div class="cert-list">
-        <div class="cert-card">
+      <div class="projects-grid">
+        <div class="project-card">
           <div class="cert-info">
             <span class="cert-badge">💻</span>
             <div class="cert-title"><a href="https://www.virtualbadge.io/certificate-validator?credential=14c874a8-6aa9-423a-b254-23c6bba6266a">Front-End Developer</a></div>
             <div class="cert-view"><a href="https://www.virtualbadge.io/certificate-validator?credential=14c874a8-6aa9-423a-b254-23c6bba6266a">View</a></div>
             <div class="cert-org">Mimo</div>
             <div class="cert-date">Issued: 2025</div>
-            <div class="cert-date">ID: 14c874a8-6aa9-423a-b254-23c6bba6266a</div>
           </div>
-          <div class="cert-desc">Front-End Development utilizing HTML, CSS, Javascript, React, and Data Structures</div>
+          <div class="cert-desc">Front-End Development utilizing HTML, CSS, Javascript, React, and Data Structures. Credential ID: 14c874a8-6aa9-423a-b254-23c6bba6266a</div>
         </div>
-        <div class="cert-card">
+        <div class="project-card">
           <div class="cert-info">
             <span class="cert-badge">💻</span>
             <div class="cert-title"><a href="htmlcertificate.pdf">HTML Certification</a></div>
@@ -128,7 +126,7 @@ environment with new Languages, Tools, and Libraries.</h3>
           </div>
           <div class="cert-desc">Core concepts of HTML and the knowledge required to create web pages, a new certificate to complement my experience.</div>
         </div>
-        <div class="cert-card">
+        <div class="project-card">
           <div class="cert-info">
             <span class="cert-badge">💻</span>
             <div class="cert-title"><a href="csscertificate.pdf">CSS Certification</a></div>
@@ -138,7 +136,7 @@ environment with new Languages, Tools, and Libraries.</h3>
           </div>
           <div class="cert-desc">Core concepts of CSS and the knowledge required to style web pages, a new certificate to complement my experience.</div>
         </div>
-        <div class="cert-card">
+        <div class="project-card">
           <div class="cert-info">
             <span class="cert-badge">💻</span>
             <div class="cert-title"><a href="jscertificate.pdf">JavaScript Certification</a></div>
@@ -148,7 +146,7 @@ environment with new Languages, Tools, and Libraries.</h3>
           </div>
           <div class="cert-desc">Core programming, DOM manipulation, and algorithmic thinking.</div>
         </div>
-        <div class="cert-card">
+        <div class="project-card">
           <div class="cert-info">
             <span class="cert-badge">💻</span>
             <div class="cert-title"><a href="jsxcertificate.pdf">React Certification</a></div>
@@ -158,22 +156,23 @@ environment with new Languages, Tools, and Libraries.</h3>
           </div>
           <div class="cert-desc">Core concepts needed for React, calling React hooks and React APIs, External APIs</div>
         </div>
-        <div class="cert-card">
+        <div class="project-card">
           <div class="cert-info">
             <span class="cert-badge">🎓</span>
             <div class="cert-title">BSc Computer Science (In Progress)</div>
+            <div class="cert-view"><a href="https://www.nu.edu/" title="National University">NU</a></div>
             <div class="cert-org">NU</div>
             <div class="cert-date">Started: 2025</div>
           </div>
           <div class="cert-desc">Broad CS knowledge: programming, algorithms, software engineering, web development.</div>
         </div>
-        <div class="cert-card">
+        <div class="project-card">
           <div class="cert-info">
             <span class="cert-badge">💻</span>
             <div class="cert-title"><a href="servsafe.pdf">ServSafe Certification</a></div>
             <div class="cert-view"><a href="servsafe.pdf">View</a></div>
+            <div class="cert-org">ServSafe</div>
             <div class="cert-date">Issued: 2019</div>
-            <div class="cert-date">Expired: 2023</div>
           </div>
           <div class="cert-desc">Food handling certification from when I was the Opening Supervisor/Manager on Duty at Chick-Fil-A</div>
         </div>
@@ -195,8 +194,7 @@ environment with new Languages, Tools, and Libraries.</h3>
           <div class="project-tech"><b>Platform: </b>Linux, Windows, MacOS, Android, iOS, Web</div>
           <div class="project-links">
             <a href="https://github.com/Dominoed/nami-lang/" target="_blank">Source Code<span class="project-sum"> (open source)</span></a>
-            <!-- <a href="#" target="_blank">Demo</a> -->
-          </div>
+         </div>
         </div>
         <div class="project-card">
           <div class="project-title">ccas-commlink</div>
@@ -208,7 +206,6 @@ Cross-Platform Communications Aggregation System - CommLink is a comprehensive c
           <div class="project-tech"><b>Platform: </b>Windows, Linux</div>
           <div class="project-links">
             <a href="https://github.com/Dominoed/ccas-commlink" target="_blank">Source Code<span class="project-sum"> (open source)</span></a>
-            <!-- <a href="#" target="_blank">Demo</a> -->
           </div>
         </div>
         <div class="project-card">
@@ -221,7 +218,6 @@ A powerful, browser-based IDE with seamless local file system integration. Edit 
           <div class="project-tech"><b>Platform: </b>Windows, Linux</div>
           <div class="project-links">
             <a href="https://github.com/Dominoed/nodepad" target="_blank">Source Code<span class="project-sum"> (open source)</span></a>
-            <!-- <a href="#" target="_blank">Demo</a> -->
           </div>
         </div>
         <div class="project-card">
@@ -235,7 +231,6 @@ on save, and you're done! The program saves your portrait into your very own ico
           <div class="project-tech"><b>Platform: </b>Windows</div>
           <div class="project-links">
             <a href="https://github.com/yourgithub/space-shooter" target="_blank">Download</a>
-            <!-- <a href="#" target="_blank">Demo</a> -->
           </div>
         </div>
         <div class="project-card">
@@ -260,12 +255,32 @@ on save, and you're done! The program saves your portrait into your very own ico
           <div class="project-tech"><b>Platform: </b>Web</div>
           <div class="project-links">
             <a href="https://github.com/brandon-post/brandon-post" target="_blank">Code</a>
-            <!-- <a href="#" target="_blank">Demo</a> -->
           </div>
         </div>
       </div> <!-- Project Grid -->
       </div>
     </details> <!-- Projects -->
   </main>
+  <script>const flexContainer = document.querySelector('.navwrapper');
+const flexItems = document.querySelectorAll('.navlink');
+
+function updateWrappedItems() {
+    // Clear previous wrapped class
+    flexItems.forEach(item => item.classList.remove('wrapped'));
+
+    // Check the position of each item
+    flexItems.forEach((item, index) => {
+        const rect = item.getBoundingClientRect();
+        const containerRect = flexContainer.getBoundingClientRect();
+
+        // If the item is below the first row, it is wrapped
+        if (rect.top > containerRect.top) {
+            item.classList.add('wrapped');
+        }
+    });
+}
+// Run on load and on resize
+window.addEventListener('load', updateWrappedItems);
+window.addEventListener('resize', updateWrappedItems);</script>
 </body>
 </html>
